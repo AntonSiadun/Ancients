@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1291998851946205500}
   - component: {fileID: 1462479978099917579}
   - component: {fileID: 820588477}
+  - component: {fileID: 124488129}
   m_Layer: 0
   m_Name: Skill
   m_TagString: Untagged
@@ -58,6 +59,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _effect: {fileID: 6962295691843008975, guid: 1a18c00b4532bfa44861e08c55e8d34d, type: 3}
+  _owner: {fileID: 0}
+  _delay: 0.6
+  _relativePosition: {x: 0, y: 1, z: 0}
 --- !u!114 &820588477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72,3 +76,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _destination: {x: 0, y: 0, z: 0}
   _duration: 0
+--- !u!114 &124488129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7370114540344179009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 661a426937c1c1940a696fb3765fed3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mesh: {fileID: 3370111821477287852, guid: ecdbba1e135c5224688c2ec9ade3850b, type: 3}
+  _owner: {fileID: 0}
+  _delay: 0.6
+  _duration: 1
+  _relativePosition: {x: 0, y: 1, z: 0}

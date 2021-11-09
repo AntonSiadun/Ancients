@@ -102,11 +102,12 @@ SkinnedMeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -134,7 +135,7 @@ SkinnedMeshRenderer:
   serializedVersion: 2
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
-  m_SkinnedMotionVectors: 1
+  m_SkinnedMotionVectors: 0
   m_Mesh: {fileID: -1525253381413818895, guid: 466c86612ab1f1d41a31df8783ad2189, type: 3}
   m_Bones:
   - {fileID: 5222896301244457686}
@@ -263,6 +264,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1387,7 +1389,7 @@ MonoBehaviour:
   _parentBlackboard: {fileID: 0}
   _serializedBlackboard: '{"_variables":{"Character":{"_name":"Character","_id":"3c8a43d2-814d-4c7c-9d27-2d2dd8f7af8f","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
     UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"Animator":{"_name":"Animator","_id":"48feaffe-c6b2-402a-84f0-afeed83c035c","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Animator,
-    UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"Health":{"_value":3,"_name":"Health","_id":"ddc4737f-645b-40e1-9dbb-28b1605d4751","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
+    UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"Health":{"_value":2,"_name":"Health","_id":"ddc4737f-645b-40e1-9dbb-28b1605d4751","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"Spawner":{"_name":"Spawner","_id":"f2232d82-a523-4554-9557-7301a2f23db6","$type":"NodeCanvas.Framework.Variable`1[[MobSpawner,
     Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"DeadBot":{"_name":"DeadBot","_id":"a571d8b8-3875-441a-a78a-45706bd42086","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}}}'
@@ -1399,7 +1401,7 @@ MonoBehaviour:
   - _json: '{"_name":"Animator","_id":"48feaffe-c6b2-402a-84f0-afeed83c035c","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Animator,
       UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}'
     _references: []
-  - _json: '{"_value":3,"_name":"Health","_id":"ddc4737f-645b-40e1-9dbb-28b1605d4751","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
+  - _json: '{"_value":2,"_name":"Health","_id":"ddc4737f-645b-40e1-9dbb-28b1605d4751","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
     _references: []
   - _json: '{"_name":"Spawner","_id":"f2232d82-a523-4554-9557-7301a2f23db6","$type":"NodeCanvas.Framework.Variable`1[[MobSpawner,
@@ -2331,11 +2333,12 @@ SkinnedMeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2363,7 +2366,7 @@ SkinnedMeshRenderer:
   serializedVersion: 2
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
-  m_SkinnedMotionVectors: 1
+  m_SkinnedMotionVectors: 0
   m_Mesh: {fileID: 4777371684598551356, guid: 466c86612ab1f1d41a31df8783ad2189, type: 3}
   m_Bones:
   - {fileID: 5222896301244457686}
@@ -2997,6 +3000,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2807767179894254824, guid: 828752ce8f380364c8143f9678740227,
         type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2807767179894254824, guid: 828752ce8f380364c8143f9678740227,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -3012,6 +3020,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2807767179894254824, guid: 828752ce8f380364c8143f9678740227,
         type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2807767179894254824, guid: 828752ce8f380364c8143f9678740227,
+        type: 3}
       propertyPath: m_LocalRotation.x
       value: -0.7071068
       objectReference: {fileID: 0}
@@ -3024,16 +3037,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2807767179894254824, guid: 828752ce8f380364c8143f9678740227,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 2807767179894254824, guid: 828752ce8f380364c8143f9678740227,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2807767179894254824, guid: 828752ce8f380364c8143f9678740227,
         type: 3}
