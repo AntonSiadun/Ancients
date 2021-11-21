@@ -4,14 +4,13 @@ using UnityEngine.UI;
 public class StatusUI : MonoBehaviour
 {
     public float duration;
-    public Image image;
+    public int id = 0;
 
     private RectTransform _transform;
 
     private void Awake()
     {
         _transform = GetComponent<RectTransform>();
-        image = GetComponent<Image>();
     }
 
     public void SetPosition(float x, float y)

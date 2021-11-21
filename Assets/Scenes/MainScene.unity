@@ -4588,7 +4588,7 @@ PrefabInstance:
     - target: {fileID: 4618036305976646627, guid: 8c0b164c55948e74d9bfd99185c539a1,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4618036305976646627, guid: 8c0b164c55948e74d9bfd99185c539a1,
         type: 3}
@@ -4842,7 +4842,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -850, y: 330}
+  m_AnchoredPosition: {x: -850, y: 360}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1351578852
@@ -4857,6 +4857,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 134d188aca61fe942ae5513413791c6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _renewal: 0
 --- !u!114 &1351578853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4869,8 +4870,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40f3f99fffbba3d409a0924b16fe71e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _repository: []
-  width: 120
+  width: 60
 --- !u!1 &1379487473
 GameObject:
   m_ObjectHideFlags: 0
@@ -8836,7 +8836,7 @@ PrefabInstance:
     - target: {fileID: 4618036305976646627, guid: 8c0b164c55948e74d9bfd99185c539a1,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4618036305976646627, guid: 8c0b164c55948e74d9bfd99185c539a1,
         type: 3}
