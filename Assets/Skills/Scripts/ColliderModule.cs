@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ColliderModule : MonoBehaviour
+public class ColliderModule : SkillModule
 {
     [SerializeField]
     private GameObject _mesh;
@@ -15,7 +15,7 @@ public class ColliderModule : MonoBehaviour
     [SerializeField]
     private Vector3 _relativePosition = new Vector3(0f,1f,0f);
 
-    public void ShowMeshCollider()
+    public override void Activate()
     {
         StartCoroutine(DelayMeshInstantiation());
     }

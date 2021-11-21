@@ -1179,6 +1179,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -2124705421725058983, guid: 56099662b9126964c98f9e7dbf303075, type: 3}
+--- !u!114 &1528661727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3295757461472147071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff56f3e7a33f4df4f929370964ad97eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _changer: {fileID: 416159508}
 --- !u!1 &3342697568113996398
 GameObject:
   m_ObjectHideFlags: 0
@@ -1288,6 +1301,7 @@ GameObject:
   - component: {fileID: 4411986554868854031}
   - component: {fileID: 4411986554868854030}
   - component: {fileID: 95420691}
+  - component: {fileID: 416159508}
   m_Layer: 0
   m_Name: Bot
   m_TagString: Untagged
@@ -1392,7 +1406,8 @@ MonoBehaviour:
     UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"Health":{"_value":2,"_name":"Health","_id":"ddc4737f-645b-40e1-9dbb-28b1605d4751","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"Spawner":{"_name":"Spawner","_id":"f2232d82-a523-4554-9557-7301a2f23db6","$type":"NodeCanvas.Framework.Variable`1[[MobSpawner,
     Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"DeadBot":{"_name":"DeadBot","_id":"a571d8b8-3875-441a-a78a-45706bd42086","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
-    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}}}'
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"myParams":{"_name":"myParams","_id":"e0d3e09d-25c1-4fbe-8644-9b4743a802f9","$type":"NodeCanvas.Framework.Variable`1[[Params,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}}}'
   _objectReferences: []
   _serializedVariables:
   - _json: '{"_name":"Character","_id":"3c8a43d2-814d-4c7c-9d27-2d2dd8f7af8f","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
@@ -1409,6 +1424,9 @@ MonoBehaviour:
     _references: []
   - _json: '{"_name":"DeadBot","_id":"a571d8b8-3875-441a-a78a-45706bd42086","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"myParams","_id":"e0d3e09d-25c1-4fbe-8644-9b4743a802f9","$type":"NodeCanvas.Framework.Variable`1[[Params,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}'
     _references: []
 --- !u!114 &4411986554868854030
 MonoBehaviour:
@@ -1453,6 +1471,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _slashWeapon: {fileID: 3295757461472147071}
   _stunWeapon: {fileID: 0}
+--- !u!114 &416159508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3601735885828370392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 188578af43a0a5448943b7105cd92111, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _value: -2
+  _duration: 1
+  _gap: 0
+  _type: 0
 --- !u!1 &3602060315063567623
 GameObject:
   m_ObjectHideFlags: 0
@@ -3071,7 +3105,7 @@ PrefabInstance:
     - target: {fileID: 3944059822508808071, guid: 828752ce8f380364c8143f9678740227,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3944059822508808071, guid: 828752ce8f380364c8143f9678740227,
         type: 3}

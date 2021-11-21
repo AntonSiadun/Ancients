@@ -1,20 +1,22 @@
 ﻿using UnityEngine;
 using DG.Tweening;
 
-public class MovementSkillModule : MonoBehaviour
+public class MovementSkillModule : SkillModule
 {
     [SerializeField]
-    private Vector3 _destination;
+    private float _forwardOffset;
     [SerializeField]
     private float _duration;
+    [SerializeField]
+    private Transform _owner;
+
+    public override void Activate()
+    {
+        Move();
+    }
 
     public void Move()
     {
-        Vector3 localForward = new Vector3 (transform.forward.x*_destination.x,
-                                            transform.forward.y*_destination.y,
-                                            transform.forward.z*_destination.z);
-        Vector3 localDestination = transform.position + localForward;
-        transform.DOMove(localDestination,_duration);
+        _owner.DOMove(_owner.position + _owner.forward * _forwardOffset,_duration);
     }
-
 }

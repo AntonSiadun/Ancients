@@ -6,8 +6,6 @@ using UnityEngine.UI;
 public class SkillButton : MonoBehaviour
 {
     [SerializeField]
-    private int _cooldown;
-    [SerializeField]
     private Text _text;
     private Button _button;
 
@@ -16,9 +14,9 @@ public class SkillButton : MonoBehaviour
         _button = GetComponent<Button>();
     }
 
-    public void StartCooldownOnButton()
+    public void StartCooldownOnButton(int cooldown)
     {
-        StartCoroutine(BlockButtonForSeconds(_cooldown));
+        StartCoroutine(BlockButtonForSeconds(cooldown));
     }
 
     private IEnumerator BlockButtonForSeconds(int cooldown)

@@ -13,26 +13,12 @@ public class HealthBar : MonoBehaviour
     [SerializeField]
     private Text _counter;
 
-    private void Start() 
+    public void RefreshInfoAboutHealth(int health)
     {
-        RefreshInfoAboutHealth();
-    }
-
-    public void RefreshInfoAboutHealth()
-    {
+        this.health = health;
         RefreshBar();
         RefreshCounter();
     }
-
-    public void IncreaseHealth(int bonus)
-    {
-        health +=bonus;
-        if(health <= 0) 
-            health = 0;
-        RefreshInfoAboutHealth();
-    }
-
-
 
     private void RefreshBar()
     {

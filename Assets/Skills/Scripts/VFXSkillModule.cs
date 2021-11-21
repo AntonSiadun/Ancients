@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class VFXSkillModule : MonoBehaviour
+public class VFXSkillModule : SkillModule
 {
     [SerializeField]
     private GameObject _effect;
@@ -12,7 +12,7 @@ public class VFXSkillModule : MonoBehaviour
     [SerializeField]
     private Vector3 _relativePosition = new Vector3(0f,1f,0f);
 
-    public void Run()
+    public override void Activate()
     {
         StartCoroutine(DelayInstantiation());
     }
